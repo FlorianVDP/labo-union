@@ -1,5 +1,4 @@
 export type Json = string | number | boolean | null | { [key: string]: Json } | Json[];
-
 export interface Database {
 	public: {
 		Tables: {
@@ -41,34 +40,37 @@ export interface Database {
 			Profile: {
 				Row: {
 					created_at: string | null;
-					cursus: string | null;
 					date_of_birth: string | null;
 					description: string | null;
 					first_name: string | null;
+					grade: string | null;
 					id: number;
 					last_name: string | null;
+					speciality: string | null;
 					status: boolean | null;
 					user_id: string | null;
 				};
 				Insert: {
 					created_at?: string | null;
-					cursus?: string | null;
 					date_of_birth?: string | null;
 					description?: string | null;
 					first_name?: string | null;
+					grade?: string | null;
 					id?: number;
 					last_name?: string | null;
+					speciality?: string | null;
 					status?: boolean | null;
 					user_id?: string | null;
 				};
 				Update: {
 					created_at?: string | null;
-					cursus?: string | null;
 					date_of_birth?: string | null;
 					description?: string | null;
 					first_name?: string | null;
+					grade?: string | null;
 					id?: number;
 					last_name?: string | null;
+					speciality?: string | null;
 					status?: boolean | null;
 					user_id?: string | null;
 				};
